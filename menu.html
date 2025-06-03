@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Waroeng Lokal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="stylee.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="Image/image2.jpg" alt="" class="logo-img me-2">
+                <span>Waroeng Lokal</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="facilities.html">Fasilitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <a href="cart-modrn.html" class="btn btn-outline-warning position-relative me-2">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="cartCount">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+  <!-- Navigation Bar (Same as above) -->
+  
+  <!-- Menu Hero Section -->
+  <section class="menu-hero">
+    <div class="menu-hero-overlay"></div>
+    <div class="container position-relative">
+      <div class="text-center text-white py-5">
+        <h1 class="display-4 fw-bold mb-3">Menu Kami</h1>
+        <div class="separator-container">
+          <div class="separator-line"></div>
+          <i class="fas fa-utensils separator-icon"></i>
+          <div class="separator-line"></div>
+        </div>
+        <p class="lead mt-3">Nikmati hidangan autentik dengan cita rasa yang tak terlupakan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Categories Section -->
+  <section class="menu-section py-5">
+    <div class="container">
+      <!-- Menu Categories -->
+      <div class="category-tabs-wrapper mb-5">
+        <ul class="nav nav-pills justify-content-center category-tabs" id="menuTabs">
+          <li class="nav-item">
+            <a class="nav-link active" data-category="all">
+              <i class="fas fa-th-large me-2"></i>Semua Menu
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-category="mieayam">
+              <i class="fas fa-bowl-food me-2"></i>Mie Ayam
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-category="bakso">
+              <i class="fas fa-meatball me-2"></i>Bakso
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-category="minuman">
+              <i class="fas fa-glass-water me-2"></i>Minuman
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Menu Items Grid -->
+      <div class="row g-4" id="menuItems">
+        <!-- Items will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="cartjs.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
